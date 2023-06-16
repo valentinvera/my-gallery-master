@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+:root {
+    --black: #393939;
+    --white: #ececec;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --black: var(--white);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none;
+        transition: none;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 100%;
+}
+
+img, source {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center center;
+    -o-object-position: center center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    display: block;
+}
+
+p a {
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+    color: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+}
+
+::selection {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+::-moz-selection {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+form, input, textarea, select, button, label {
+    color: inherit;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    display: block;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+table, tr, td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
